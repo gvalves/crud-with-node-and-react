@@ -2,7 +2,7 @@ import { PostgresPortfolioRepository } from '../../repositories/implementations'
 import { DeletePortfolioController } from './DeletePortfolioController';
 import { DeletePortfolioFeature } from './DeletePortfolioFeature';
 
-const postgresPortfolioRepository = new PostgresPortfolioRepository();
+const postgresPortfolioRepository = PostgresPortfolioRepository.getInstance();
 
 const deletePortfolioFeature = new DeletePortfolioFeature(
   postgresPortfolioRepository
