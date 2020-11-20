@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon --exec sucrase-node ./app.js"
+    "start": "nodemon --exec sucrase-node ./src/server.ts"
   },
   "author": "Gustavo V. Alves",
   "license": "MIT",
