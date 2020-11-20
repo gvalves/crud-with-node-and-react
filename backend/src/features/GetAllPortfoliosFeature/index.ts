@@ -2,7 +2,7 @@ import { PostgresPortfolioRepository } from '../../repositories/implementations'
 import { GetAllPortfoliosController } from './GetAllportfoliosController';
 import { GetAllPortfoliosFeature } from './GetAllPortfoliosFeature';
 
-const postgresPortfolioRepository = new PostgresPortfolioRepository();
+const postgresPortfolioRepository = PostgresPortfolioRepository.getInstance();
 
 const getAllPortfoliosFeature = new GetAllPortfoliosFeature(
   postgresPortfolioRepository

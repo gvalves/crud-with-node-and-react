@@ -17,8 +17,8 @@ export class UpdatePortfolioController {
     };
 
     try {
-      const id = Number(req.params.id);
-      const { description, details } = req.params;
+      const id = Number(req.body.id);
+      const { description, details } = req.body;
 
       await this.updatePortfolioFeature.execute({
         id,
