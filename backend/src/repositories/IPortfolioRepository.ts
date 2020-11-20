@@ -5,5 +5,5 @@ export interface IPortfolioRepository {
   getById(): Promise<Portfolio>;
   save(portfolio: Portfolio): Promise<void>;
   update(portfolio: Portfolio): Promise<void>;
-  deleteById(id: number): Promise<void>;
+  delete(id: number): Promise<void>;
 }
